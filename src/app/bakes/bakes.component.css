@@ -1,0 +1,26 @@
+.card{
+  width: 200px;
+  height: 300px;
+  background-color: chocolate;
+  margin-right: 2em;
+  margin-left: 2em;
+
+
+}
+.arr{
+  display: flex;
+
+}
+#text{
+  text-align: center;
+}
+.foto{
+  width: 100px;
+  height: 80px;
+  margin: auto;
+
+}
+.foto img{
+  width: 100%;
+  border-radius: 1em;
+}

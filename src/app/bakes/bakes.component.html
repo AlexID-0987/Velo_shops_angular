@@ -1,0 +1,38 @@
+<p>bakes works!</p>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>bakeId</th>
+    <th>Model</th>
+    <th>Name</th>
+    <th>Color</th>
+    <th>Price</th>
+    <th>Foto</th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let ba of resp">
+    <td>{{ba.bakeId}}</td>
+    <td>{{ba.model}}</td>
+    <td>{{ba.name}}</td>
+    <td>{{ba.color}}</td>
+    <td>{{ba.foto}}</td>
+    <td>{{ba.price}}</td>
+    <td>{{ba.dateTime}}</td>
+  </tr>
+  </tbody>
+</table>
+<div class="arr">
+<div *ngFor="let bake of resp" class="card">
+  <label id="text">ID:{{bake.bakeId}}</label>
+  <label id="text">Model:{{bake.model}}</label>
+  <label id="text">Name:{{bake.name}}</label>
+  <label id="text">Color:{{bake.color}}</label>
+  <div class="foto">
+    <img src="{{bake.foto}}">
+  </div>
+  <label id="text">Price:{{bake.price}}</label>
+  <label id="text">Date:{{bake.dateTime}}</label>
+</div>
+</div>
